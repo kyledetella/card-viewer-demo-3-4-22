@@ -1,0 +1,78 @@
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+/** -- Integration specific styling (helpers) -- **/
+
+/**
+The height, width, and outer-styling of the iframes is up to you.
+*/
+iframe {
+  height: 20px;
+}
+
+/** --- Demo specific styling --- **/
+
+#app {
+  margin: 0 auto;
+  width: 425px;
+}
+
+#cardDetails {
+  border: 1px solid;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  margin-bottom: 0.25em;
+}
+
+.cardField {
+  margin-bottom: 1em;
+  color: #abb0a9;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+#cardNumber iframe {
+  width: 215px;
+}
+
+#cvv iframe,
+#expirationDate iframe {
+  width: 80px;
+}
+
+.sr-only {
+  display: none;
+}
+
+svg:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.toggleCardNumberMaskButton > #eyeClosed {
+  display: none;
+}
+
+.toggleCardNumberMaskButton > #eyeOpen {
+  display: inline;
+}
+
+.toggleCardNumberMaskButton.masked > #eyeOpen {
+  display: none;
+}
+
+.toggleCardNumberMaskButton.masked > #eyeClosed {
+  display: inline;
+}
